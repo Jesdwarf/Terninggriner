@@ -9,8 +9,12 @@ class DiceTest {
         Dice tester = new Dice();
         int i = 0;
         int et, to, tre, fire, fem, seks;
+        int n = 0;
         et = to = tre = fire = fem = seks = 0;
         int resultat;
+        int intervalMin = 10000-400;
+        int intervalMax = 10000+400;
+
 
         while (i < 60001) {
             resultat = tester.roll();
@@ -33,13 +37,18 @@ class DiceTest {
                 case 6:
                     seks++;
                     break;
+                default:
+                    n++;
+                    break;
             }
             i++;
         }
 
-        assertTrue(9600 <= et && et <= 14000 && 9600 <= to && to <= 14000 && 9600 <= tre && tre <= 14000 && 9600 <= fire && fire <= 14000 && 9600 <= fem && fem <= 14000 && 9600 <= seks && seks <= 14000);
-
+        assertTrue(intervalMin <= et && et <= intervalMax && intervalMin <= to && to <= intervalMax && intervalMin <= tre && tre <= intervalMax && intervalMin <= fire && fire <= intervalMax && intervalMin <= fem && fem <= intervalMax && intervalMin <= seks && seks <= intervalMax);
+        assertTrue(n != 0);
     }
+
+
     @org.junit.jupiter.api.Test
     void rollMultiple() {
     }
