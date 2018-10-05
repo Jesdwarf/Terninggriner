@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class DiceTest {
 
     /**
-     * tester om Dice.roll() kun returnere værdier mellem 1 og 6
+     * tester om Dice.roll() kun returnerer værdier mellem 1 og 6
      * og om alle værdier forekommer ca lige hyppigt
      */
 
@@ -56,6 +56,6 @@ class DiceTest {
 
     @org.junit.jupiter.api.Test
     void rollMultiple() {
-        
+
     }
 }
