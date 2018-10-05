@@ -50,7 +50,7 @@ class DiceTest {
         }
 
         assertTrue(intervalMin <= et && et <= intervalMax && intervalMin <= to && to <= intervalMax && intervalMin <= tre && tre <= intervalMax && intervalMin <= fire && fire <= intervalMax && intervalMin <= fem && fem <= intervalMax && intervalMin <= seks && seks <= intervalMax);
-        assertTrue(n != 0);
+        assertTrue(n == 0);
     }
 
 
